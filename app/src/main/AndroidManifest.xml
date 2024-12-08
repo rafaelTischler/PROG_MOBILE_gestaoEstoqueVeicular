@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Trabalho_gestaoEstoqueVeicular"
         tools:targetApi="31">
         <activity
+            android:name=".menuPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".tela_cadastro"
             android:exported="false" />
         <activity
