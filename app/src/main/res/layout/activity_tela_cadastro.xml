@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/bmw_cadUser"
+    android:background="@drawable/bmw_caduser"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".tela_cadastro">
@@ -84,7 +84,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edit_fone"
+                android:id="@+id/edit_telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/numero_celular" />
