@@ -9,7 +9,7 @@
     android:background="@drawable/bmw_caduser"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".tela_cadastro">
+    tools:context=".telaCadastro">
 
 
     <LinearLayout
@@ -113,7 +113,7 @@
                 android:text="@string/cadastrar" />
 
             <TextView
-                android:id="@+id/lbl_telaLogin"
+                android:id="@+id/lbl_telaMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

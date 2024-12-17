@@ -24,4 +24,13 @@
     <string name="remover_veiculo">REMOVER VEÍCULO</string>
     <string name="desc_menu">A maneira mais fácil de encontrar e gerenciar seus veículos</string>
     <string name="desc_menu2">Aqui você pode cadastrar, consultar e atualizar o seu estoque de carros de forma rápida e prática. Gerencie informações como marca, modelo, cor, ano e tipo de combustível com facilidade.</string>
+    <string name="cadastrar_um_veiculo">Cadastrar um veículo</string>
+    <string name="marca_do_veiculo">Marca do veículo</string>
+    <string name="modelo_do_veiculo">Modelo do veículo</string>
+    <string name="cor">Cor</string>
+    <string name="ano">Ano</string>
+    <string name="cor_do_veiculo">Cor do veículo</string>
+    <string name="combustivel">Combustível</string>
+    <string name="ano_de_fabricacao">Ano de fabricação</string>
+    <string name="tipo_de_combustivel">Tipo de combustível</string>
 </resources>

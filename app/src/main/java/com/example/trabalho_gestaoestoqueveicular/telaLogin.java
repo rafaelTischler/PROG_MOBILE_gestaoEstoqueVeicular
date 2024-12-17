@@ -49,7 +49,7 @@ public class telaLogin extends AppCompatActivity {
         lbl_cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), tela_cadastro.class);
+                Intent intent = new Intent(getApplicationContext(), telaCadastro.class);
                 startActivity(intent);
             }
         });
@@ -64,7 +64,7 @@ public class telaLogin extends AppCompatActivity {
         @Override
         protected String doInBackground(String... arg0) {
             try {
-                String url = "http://192.168.0.104/estoqueVeiculos/consulta_login.php";
+                String url = "http://192.168.137.1/estoqueVeiculos/consulta_login.php";
                 JSONObject jsonValores = new JSONObject();
                 jsonValores.put("login", edit_login.getText().toString());
                 jsonValores.put("senha", edit_senha.getText().toString());
