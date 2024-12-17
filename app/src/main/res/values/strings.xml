@@ -18,4 +18,10 @@
     <string name="crie_uma_senha_segura">Crie uma senha segura</string>
     <string name="cadastrar">CADASTRAR</string>
     <string name="voltar_para_a_tela_de_login">Voltar para a tela de login</string>
+    <string name="cadastrar_veiculo">CADASTRAR VEÍCULO</string>
+    <string name="consultar_veiculo">CONSULTAR VEÍCULO</string>
+    <string name="alterar_veiculo">ALTERAR VEÍCULO</string>
+    <string name="remover_veiculo">REMOVER VEÍCULO</string>
+    <string name="desc_menu">A maneira mais fácil de encontrar e gerenciar seus veículos</string>
+    <string name="desc_menu2">Aqui você pode cadastrar, consultar e atualizar o seu estoque de carros de forma rápida e prática. Gerencie informações como marca, modelo, cor, ano e tipo de combustível com facilidade.</string>
 </resources>
