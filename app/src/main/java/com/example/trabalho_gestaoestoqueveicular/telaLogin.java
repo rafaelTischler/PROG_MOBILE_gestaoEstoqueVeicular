@@ -28,6 +28,7 @@ public class telaLogin extends AppCompatActivity {
     TextView lbl_cadastrar;
     String login = "";
     String senha = "";
+    String userId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,6 @@ public class telaLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new EnviaJSONPostLoginSenha().execute();
-
             }
         });
         lbl_cadastrar = findViewById(R.id.lbl_cadastrar);
@@ -64,7 +64,7 @@ public class telaLogin extends AppCompatActivity {
         @Override
         protected String doInBackground(String... arg0) {
             try {
-                String url = "http://192.168.137.1/estoqueVeiculos/consulta_login.php";
+                String url = "http://192.168.0.101/estoqueVeiculos/consulta_login.php";
                 JSONObject jsonValores = new JSONObject();
                 jsonValores.put("login", edit_login.getText().toString());
                 jsonValores.put("senha", edit_senha.getText().toString());
@@ -77,9 +77,11 @@ public class telaLogin extends AppCompatActivity {
                         JSONObject jsonItem = jsonArray.getJSONObject(i);
                         login = jsonItem.optString("email").toString();
                         senha = jsonItem.optString("senha").toString();
+                        userId = jsonItem.optString("id").toString();
                     }
                     if ((edit_login.getText().toString().equals(login)) && (edit_senha.getText().toString().equals(senha))) {
                         Intent i = new Intent(getApplicationContext(), menuPrincipal.class);
+                        i.putExtra("userId", userId);
                         startActivity(i);
                     } else {
                         Toast.makeText(telaLogin.this, "Login ou senha incorretos", Toast.LENGTH_LONG).show();

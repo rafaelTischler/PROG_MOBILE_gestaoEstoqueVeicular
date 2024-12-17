@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="45dp"
             android:layout_marginBottom="45dp"
-            android:text="Preencha as informações abaixo para cadastrar um veículo no estoque. Ao clicar em cadastrar, o veículo estará disponível para consultas e gerenciamento."
+            android:text="@string/desc_cad"
             android:textColor="@color/black" />
 
         <LinearLayout
@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Marca"
+                android:text="@string/marca"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="Modelo"
+                android:text="@string/modelo"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -95,7 +95,6 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -148,12 +147,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Voltar para o menu"
+                android:text="@string/voltar_para_o_menu"
                 android:textAlignment="center"
                 android:textColor="#a63e29"
                 android:textSize="15sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
 
 

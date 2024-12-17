@@ -8,6 +8,8 @@ public class automovel {
     private String ano;
     private String cor;
     private String combustivel;
+    private String usuario;
+    private String dataCad;
 
     public automovel(String marca, String modelo, String ano, String cor, String combustivel) {
         this.marca = marca;
@@ -15,6 +17,34 @@ public class automovel {
         this.ano = ano;
         this.cor = cor;
         this.combustivel = combustivel;
+    }
+
+    public automovel(int id, String marca, String modelo, String ano, String cor,
+                     String combustivel, String usuario, String dataCad) {
+        this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+        this.combustivel = combustivel;
+        this.usuario = usuario;
+        this.dataCad = dataCad;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getDataCad() {
+        return dataCad;
+    }
+
+    public void setDataCad(String dataCad) {
+        this.dataCad = dataCad;
     }
 
     public int getId() {

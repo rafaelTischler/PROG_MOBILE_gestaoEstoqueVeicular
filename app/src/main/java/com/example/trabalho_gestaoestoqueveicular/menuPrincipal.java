@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class menuPrincipal extends AppCompatActivity {
 
     Button btn_cadastrarVeiculo, btn_consultarVeiculo, btn_alterarVeiculo, btn_removerVeiculo;
+    String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +22,24 @@ public class menuPrincipal extends AppCompatActivity {
         EdgeToEdge.enable(this);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_menu_principal);
+        userId = getIntent().getStringExtra("userId");
         btn_cadastrarVeiculo = findViewById(R.id.btn_cadVeiculo);
         btn_cadastrarVeiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), cadastroVeiculo.class);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
             }
         });
         btn_consultarVeiculo = findViewById(R.id.btn_consVeiculo);
+        btn_consultarVeiculo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), consultaVeiculo.class);
+                startActivity(intent);
+            }
+        });
         btn_alterarVeiculo = findViewById(R.id.btn_alterarVeiculo);
         btn_removerVeiculo = findViewById(R.id.btn_removerVeiculo);
 

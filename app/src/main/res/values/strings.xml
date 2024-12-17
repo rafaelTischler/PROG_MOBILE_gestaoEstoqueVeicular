@@ -33,4 +33,11 @@
     <string name="combustivel">Combustível</string>
     <string name="ano_de_fabricacao">Ano de fabricação</string>
     <string name="tipo_de_combustivel">Tipo de combustível</string>
+    <string name="consultar_veiculos">Consultar veículos</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="voltar_para_o_menu">Voltar para o menu</string>
+    <string name="desc_cad">Preencha as informações abaixo para cadastrar um veículo no estoque. Ao clicar em cadastrar, o veículo estará disponível para consultas e gerenciamento.</string>
+    <string name="consultar">CONSULTAR</string>
+    <string name="buscar">BUSCAR</string>
 </resources>

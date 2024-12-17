@@ -68,7 +68,7 @@ public class telaCadastro extends AppCompatActivity {
         @Override
         protected String doInBackground(String... arg0) {
             try {
-                String url = "http://192.168.0.104/estoqueVeiculos/cadastra_usuario.php";
+                String url = "http://192.168.0.101/estoqueVeiculos/cadastra_usuario.php";
                 JSONObject jsonValores = new JSONObject();
                 jsonValores.put("nome", user.getNome());
                 jsonValores.put("email", user.getEmail());
